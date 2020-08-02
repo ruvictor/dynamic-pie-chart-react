@@ -1,0 +1,20 @@
+.Answer{
+    display: flex;
+}
+.Score{
+    padding: 2px;
+    margin-left: 10px;
+    width: 5%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.leftArrow {
+    margin-top: 1.5px;
+    margin-left: -7.2px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+}
