@@ -65,6 +65,16 @@ export default class Pie extends Component{
     }
 
     render(){
+        const ChartPieChunk = 
+        this.state.slices[1].transform !== '0.1' && 
+        this.state.slices[2].transform !== '0.1' && 
+        this.state.slices[3].transform !== '0.1' && 
+        this.state.slices[4].transform !== '0.1' && 
+        this.state.slices[5].transform !== '0.1' && 
+        this.state.slices[6].transform !== '0.1' && 
+        this.state.slices[7].transform !== '0.1' && 
+        this.state.slices[8].transform !== '0.1' ? 
+        'ChartPieChunk SpinCricle' : 'ChartPieChunk';
         return (
             <div className="Content">
                 <div className="QuestionsBlock">
@@ -77,7 +87,7 @@ export default class Pie extends Component{
                     </div>
                 <div className="ChartBlock">
                     <div className="ChartPie" style={{width: '450px'}}>
-                        <svg className="ChartPieChunk" width="440px" height="440px" viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg">
+                        <svg className={ChartPieChunk} width="440px" height="440px" viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <g id="overlay">
                                 <rect x="219" y="20" height="200" width="2" fill="#FFF"></rect>
